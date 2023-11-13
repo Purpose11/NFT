@@ -1,16 +1,16 @@
 import { PiRocketLaunch } from "react-icons/pi";
-import artist1 from "../assets/images/artist1.png";
-import artist2 from "../assets/images/artist2.png";
-import artist3 from "../assets/images/artist3.png";
-import artist4 from "../assets/images/artist4.png";
-import artist5 from "../assets/images/artist5.png";
-import artist6 from "../assets/images/artist6.png";
-import artist7 from "../assets/images/artist7.png";
-import artist8 from "../assets/images/artist8.png";
-import artist9 from "../assets/images/artist9.png";
-import artist10 from "../assets/images/artist10.png";
-import artist11 from "../assets/images/artist11.png";
-import artist12 from "../assets/images/artist12.png";
+import artist1 from "../../assets/images/artist1.png";
+import artist2 from "../../assets/images/artist2.png";
+import artist3 from "../../assets/images/artist3.png";
+import artist4 from "../../assets/images/artist4.png";
+import artist5 from "../../assets/images/artist5.png";
+import artist6 from "../../assets/images/artist6.png";
+import artist7 from "../../assets/images/artist7.png";
+import artist8 from "../../assets/images/artist8.png";
+import artist9 from "../../assets/images/artist9.png";
+import artist10 from "../../assets/images/artist10.png";
+import artist11 from "../../assets/images/artist11.png";
+import artist12 from "../../assets/images/artist12.png";
 
 const TopArtists = () => {
   return (

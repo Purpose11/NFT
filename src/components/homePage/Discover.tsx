@@ -1,10 +1,11 @@
 import { AiOutlineEye } from "react-icons/ai";
-import moonDancer from "../assets/images/moonDancer.png";
-import galaxy from "../assets/images/galaxy.png";
-import nebulaKid from "../assets/images/nebulakid.png";
-import nebulaAvatar from "../assets/images/nebulaAvatar.png";
-import astro from "../assets/images/astro.png";
-import spaceone from "../assets/images/spaceone.png";
+import moonDancer from "../../assets/images/moonDancer.png";
+import galaxy from "../../assets/images/galaxy.png";
+import nebulaKid from "../../assets/images/nebulakid.png";
+import nebulaAvatar from "../../assets/images/nebulaAvatar.png";
+import astro from "../../assets/images/astro.png";
+import spaceone from "../../assets/images/spaceone.png";
+import { Link } from "react-router-dom";
 const Discover = () => {
   const NFTs = [
     {
@@ -41,10 +42,13 @@ const Discover = () => {
           </p>
         </div>
 
-        <button className="w-[187px] h-[60px] border-2 border-main rounded-[20px] flex items-center justify-center gap-[12px]">
+        <Link
+          className="w-[187px] h-[60px] border-2 border-main rounded-[20px] flex items-center justify-center gap-[12px] cursor-pointer"
+          to="/marketplace"
+        >
           <AiOutlineEye className=" shrink-0 text-main h-[20px] w-[20px]" />
           <p className=" font-Work_sance text-base font-[600]">See All</p>
-        </button>
+        </Link>
       </div>
 
       <div className="w-[1050px] h-[496px] grid grid-cols-3 gap-[30px] mx-auto">

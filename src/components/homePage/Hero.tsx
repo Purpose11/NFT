@@ -1,6 +1,6 @@
 import { PiRocketLaunch } from "react-icons/pi";
-import Image_Placeholder from "../assets/images/Image_Placeholder.png";
-import avatar from "../assets/images/avatar.png";
+import Image_Placeholder from "../../assets/images/Image_Placeholder.png";
+import avatar from "../../assets/images/avatar.png";
 
 const Hero = () => {
   const info = [

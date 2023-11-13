@@ -1,14 +1,14 @@
-import DSGN from "../assets/images/DSGN.png";
-import DSGN1 from "../assets/images/DSGN1.png";
-import DSGN2 from "../assets/images/DSGN2.png";
-import Disco from "../assets/images/Disco.png";
-import Mushrooms from "../assets/images/Mushrooms.png";
-import mushroom1 from "../assets/images/mushroom1.png";
-import disco1 from "../assets/images/disco1.png";
-import disco2 from "../assets/images/disco2.png";
-import dsgn_avatar from "../assets/images/dsgn_avatar.png";
-import shroomie from "../assets/images/shroomie.png";
-import robot from "../assets/images/robot.png";
+import DSGN from "../../assets/images/DSGN.png";
+import DSGN1 from "../../assets/images/DSGN1.png";
+import DSGN2 from "../../assets/images/DSGN2.png";
+import Disco from "../../assets/images/Disco.png";
+import Mushrooms from "../../assets/images/Mushrooms.png";
+import mushroom1 from "../../assets/images/mushroom1.png";
+import disco1 from "../../assets/images/disco1.png";
+import disco2 from "../../assets/images/disco2.png";
+import dsgn_avatar from "../../assets/images/dsgn_avatar.png";
+import shroomie from "../../assets/images/shroomie.png";
+import robot from "../../assets/images/robot.png";
 
 const Trending = () => {
   return (

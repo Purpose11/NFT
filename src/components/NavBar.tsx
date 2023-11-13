@@ -16,7 +16,7 @@ const NavBar = () => {
         <Link to="/marketplace" className="hover:text-main">
           Marketplace
         </Link>
-        <Link to="/marketplace" className="hover:text-main">
+        <Link to="/rankings" className="hover:text-main">
           Rankings
         </Link>
         <Link to="/marketplace" className="hover:text-main">

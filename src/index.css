@@ -10,3 +10,21 @@ body {
   color: white;
 }
 
+.underline {
+  height: 2px;
+  width: 0;
+  background-color: #858584; /* Change this to the color you want for the underline */
+  position: absolute;
+  bottom: 0;
+  transition: left 0.3s ease;
+}
+
+.underline.menu1 {
+  left: 0%;
+  width: 50%;
+}
+
+.underline.menu2 {
+  left: 50%;
+  width: 50%;
+}

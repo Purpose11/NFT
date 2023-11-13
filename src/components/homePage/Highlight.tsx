@@ -1,5 +1,5 @@
-import Mushrooms from "../assets/images/Mushrooms.png";
-import shroomie from "../assets/images/shroomie.png";
+import Mushrooms from "../../assets/images/Mushrooms.png";
+import shroomie from "../../assets/images/shroomie.png";
 import { AiOutlineEye } from "react-icons/ai";
 import { useState, useEffect } from "react";
 

@@ -1,5 +1,12 @@
+import Headline from "../components/marketplace/Headline";
+import MarketSection from "../components/marketplace/MarketSection";
 const Marketplace = () => {
-  return <div>marketplace</div>;
+  return (
+    <>
+      <Headline />
+      <MarketSection />
+    </>
+  );
 };
 
 export default Marketplace;
