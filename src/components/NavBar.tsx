@@ -19,11 +19,11 @@ const NavBar = () => {
         <Link to="/rankings" className="hover:text-main">
           Rankings
         </Link>
-        <Link to="/marketplace" className="hover:text-main">
+        <Link to="/wallet" className="hover:text-main">
           Connect a walltet
         </Link>
         <Link
-          to="/marketplace"
+          to="/signup"
           className="w-[152px] h-[60px] bg-main flex items-center justify-center gap-[12px] rounded-[20px]"
         >
           <PiUser className="shrink-0 h-[20px] w-[20px] text-base" />

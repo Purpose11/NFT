@@ -1,6 +1,7 @@
 import { PiRocketLaunch } from "react-icons/pi";
 import Image_Placeholder from "../../assets/images/Image_Placeholder.png";
 import avatar from "../../assets/images/avatar.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const info = [
@@ -33,10 +34,13 @@ const Hero = () => {
               sell art from more than 20k NFT artists.
             </h1>
           </div>
-          <button className="bg-main w-[224px] h-[60px] rounded-[20px] flex  py-0 px-[50px] items-center gap-3">
+          <Link
+            className="bg-main w-[224px] h-[60px] rounded-[20px] flex  py-0 px-[50px] items-center gap-3 cursor-pointer"
+            to="/signup"
+          >
             <PiRocketLaunch className=" shrink-0 h-[20px] w-[20px]" />
             <p className=" font-Work_sance text-base">Get Started</p>
-          </button>
+          </Link>
           <div className="w-full h-[77px] flex gap-[20px]">
             {info.map((inf) => (
               <div className="w-[150px] h-[77px]" key={inf.id}>

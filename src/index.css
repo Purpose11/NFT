@@ -18,6 +18,27 @@ body {
   bottom: 0;
   transition: left 0.3s ease;
 }
+.underline2 {
+  height: 2px;
+  width: 0;
+  background-color: #858584; /* Change this to the color you want for the underline */
+  position: absolute;
+  bottom: 0;
+  transition: left 0.3s ease;
+  width: 25%;
+}
+.underline2.menu1 {
+  left: 0%; 
+}
+.underline2.menu2 {
+  left: 25%; 
+}
+.underline2.menu3 {
+  left: 50%; 
+}
+.underline2.menu4 {
+  left: 75%; 
+}
 
 .underline.menu1 {
   left: 0%;
