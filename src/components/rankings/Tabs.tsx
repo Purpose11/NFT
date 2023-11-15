@@ -26,27 +26,28 @@ const Tabs = () => {
   ];
   return (
     <div className="w-full h-fit">
-      <div className="w-[1050px] h-[60px] mx-auto flex items-center justify-between relative">
+      <div className="lg:w-[1050px] w-[315px] h-[60px] mx-auto flex items-center justify-between relative ">
         {tabs.map((tab) => {
           return (
             <div
               key={tab.id}
               className="w-[25%] h-[60px] flex items-center justify-center"
             >
-              <h5
-                className={`font-Work_sance text-[22px] font-[600]  cursor-pointer ${
+              <div
+                className={`font-Work_sance lg:text-[22px] text-base font-[600]  cursor-pointer   ${
                   activeTab === tab.id ? "text-white" : "text-[#858584]"
                 }`}
                 onClick={() => setActiveTab(tab.id)}
               >
-                {tab.name}
-              </h5>
+                <h5 className="hidden lg:block">{tab.name}</h5>
+                <h5 className="block lg:hidden">{tab.span}</h5>
+              </div>
             </div>
           );
         })}
         <div className={`underline2 menu${activeTab}`} />
       </div>
-      <div className="w-full h-[2206px]">
+      <div className="w-full lg:h-[2206px] h-fit">
         {activeTab === 1 ? (
           <Ranks />
         ) : activeTab === 2 ? (

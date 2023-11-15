@@ -4,7 +4,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { CiLock } from "react-icons/ci";
 const SignUp = () => {
   return (
-    <div className="w-full h-[691px]  flex justify-between">
+    <div className="w-full h-[691px]  flex gap-[60px]">
       <img src={space2} className="w-[610px] h-[691px]" />
       <div className="w-[610px] h-[691px] py-[100px]">
         <div className="w-[460px] h-[146px]">

@@ -43,7 +43,7 @@ const Highlight = () => {
 
   return (
     <div
-      className="h-[640px] w-full mx-auto pt-[360px] pb-[60px]"
+      className="lg:h-[640px] h-[590px] w-full mx-auto lg:pt-[360px] pt-[120px] lg:pb-[60px] pb-[40px]"
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(162, 89, 255, 0), rgba(162, 89, 255, 1)), url(${Mushrooms})`,
         backgroundSize: "cover",
@@ -51,23 +51,23 @@ const Highlight = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="w-[1050px] h-[220px]  mx-auto flex items-end">
-        <div className="w-[775px] h-[220px] flex flex-col gap-[30px]">
+      <div className="lg:w-[1050px] w-[315px] lg:h-[220px] h-[430px]  mx-auto flex flex-col lg:flex-row lg:items-end relative lg:static gap-[20px] lg:gap-0">
+        <div className="lg:w-[775px] w-full lg:h-[220px] h-fit flex flex-col gap-[30px]">
           <div className="w-[151px] h-[44px] rounded-[20px] flex items-center justify-center gap-[12px] bg-[#3B3B3B]">
             <img src={shroomie} className="w-[24px] h-[24px]" />
             <p className=" font-Work_sance text-base ">Shroomie</p>
           </div>
-          <h2 className=" font-Work_sance text-[51px] font-[600] ">
+          <h2 className=" font-Work_sance lg:text-[51px] text-[38px] font-[600] ">
             Magic Mushrooms
           </h2>
-          <button className="w-[198px] h-[60px] rounded-[20px] flex items-center justify-center gap-[12px] bg-white">
+          <button className="lg:w-[198px] w-[315px] h-[60px] rounded-[20px] flex items-center justify-center gap-[12px] bg-white absolute lg:static bottom-0">
             <AiOutlineEye className=" text-main h-[20px] w-[20px] shrink-0" />
             <p className=" font-Work_sance text-base text-black font-[600]">
               See NFT
             </p>
           </button>
         </div>
-        <div className="w-[295px] h-[144px] rounded-[20px] p-[30px]  bg-[#3B3B3B]/50 flex flex-col gap-[10px]">
+        <div className="lg:w-[295px] w-[315px] h-[144px] rounded-[20px] p-[30px]  bg-[#3B3B3B]/50 flex flex-col gap-[10px]">
           <p className=" font-Space_mono text-xs">Auction ends in:</p>
           <div className="w-[235px] h-[61px] flex gap-[10px]">
             <div className="w-[53px] h-[61px]">

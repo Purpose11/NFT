@@ -49,3 +49,6 @@ body {
   left: 50%;
   width: 50%;
 }
+.active {
+  transition: 0.3s;
+}

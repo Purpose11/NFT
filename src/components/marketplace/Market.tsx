@@ -109,40 +109,47 @@ const Market = () => {
     },
   ];
   return (
-    <div className=" w-full h-[2106px] bg-[#3B3B3B] border-b-2 border-[#2B2B2B] py-[60px]">
-      <div className="w-[1050px] h-fit grid grid-cols-3 gap-[30px]  mx-auto">
+    <div className=" w-full lg:h-[2106px] h-fit bg-[#3B3B3B] border-b-2 border-[#2B2B2B] lg:py-[60px] py-[40px] ">
+      <div className="lg:w-[1050px] w-[315px] h-fit lg:grid lg:grid-cols-3 flex flex-col gap-[30px]  mx-auto">
         {NFTs.map((NFT) => {
           return (
-            <div key={NFT.id} className=" w-[330px] h-[469px] rounded-[20px]">
+            <div
+              key={NFT.id}
+              className=" lg:w-[330px] w-[315px] lg:h-[469px] h-[402px] rounded-[20px]"
+            >
               <img
                 src={NFT.image}
-                className="w-full h-[296px] rounded-t-[20px]"
+                className="w-full lg:h-[296px] h-[238px] rounded-t-[20px]"
               />
 
-              <div className="bg-[#2B2B2B] w-full h-[173px] rounded-b-[20px] flex flex-col  gap-[25px] px-[30px] pt-[20px] pb-[25px]">
-                <div className="w-[270px] h-[60px] flex flex-col gap-[5px]">
+              <div className="bg-[#2B2B2B] w-full lg:h-[173px] h-[164px] rounded-b-[20px] flex flex-col  gap-[25px] lg:px-[30px] px-[20px] pt-[20px] pb-[25px] ">
+                <div className="lg:w-[270px] w-[275px] h-[60px] flex flex-col gap-[5px]">
                   <h5 className=" font-Work_sance text-[22px] font-[600]">
                     {NFT.name}
                   </h5>
-                  <div className="h-[24px] w-[270px] flex gap-[12px]">
+                  <div className="h-[24px] lg:w-[270px] w-[275px] flex gap-[12px]">
                     <img src={NFT.artistAvatar} className="h-[24px] w-[24px]" />
                     <p className=" font-Space_mono text-base font-normal">
                       {NFT.artistName}
                     </p>
                   </div>
                 </div>
-                <div className="w-[270px] h-[43px] flex justify-between">
-                  <div className=" w-[135px] h-[43px]  flex flex-col gap-[8px]">
-                    <p className=" font-Space_mono text-[#858584] text-xs">
+                <div className="lg:w-[270px] w-[275px] lg:h-[43px] h-[34px] flex justify-between ">
+                  <div className="lg:w-[135px] w-[137.5px] lg:h-[43px] h-[34px]  flex flex-col gap-[8px] ">
+                    <p className=" font-Space_mono text-[#858584] lg:text-xs text-[12px] leading-[13.2px] lg:leading-0 ">
                       Price
                     </p>
-                    <p className="  font-Space_mono text-base">1.63 ETH</p>
+                    <p className="  font-Space_mono lg:text-base text-[12px]">
+                      1.63 ETH
+                    </p>
                   </div>
-                  <div className=" w-[135px] h-[43px]  flex items-end flex-col gap-[8px]">
-                    <p className=" font-Space_mono text-[#858584] text-xs">
+                  <div className=" lg:w-[135px] w-[137.5px] lg:h-[43px] h-[34px] flex items-end flex-col gap-[8px]">
+                    <p className=" font-Space_mono text-[#858584] lg:text-xs text-[12px] leading-[13.2px] lg:leading-0">
                       Highest Bid
                     </p>
-                    <p className="font-Space_mono text-base">0.33 wETH</p>
+                    <p className="font-Space_mono lg:text-base text-[12px]">
+                      0.33 wETH
+                    </p>
                   </div>
                 </div>
               </div>

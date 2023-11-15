@@ -21,7 +21,7 @@ const Ranks = () => {
     {
       id: 1,
       avatar: avatar1,
-      name: "Jaydon Ekstrom Bothman",
+      name: "Jaydon Ekstrom",
     },
     {
       id: 2,
@@ -120,49 +120,58 @@ const Ranks = () => {
     },
   ];
   return (
-    <div className="w-full h-[2206px] py-[40px]">
-      <div className="w-[1050px] h-fit mx-auto">
+    <div className="w-full lg:h-[2206px] h-fit py-[40px] ">
+      <div className="lg:w-[1050px] w-[315px] h-fit mx-auto">
         {/*header*/}
-        <div className="h-[46px] w-full rounded-[20px] border border-[#858584] flex justify-between px-[20px] text-[#858584]">
-          <div className="w-[50%] flex items-center gap-[20px] ">
-            <div className=" font-Space_mono text-base h-[30px] w-[30px] flex items-center justify-center">
+        <div className="h-[46px] w-full rounded-[20px] border border-[#858584] flex justify-between lg:px-[20px] px-[12px] text-[#858584]">
+          <div className="lg:w-[50%] w-[215px] flex items-center lg:gap-[20px] gap-[10px]  ">
+            <div className=" font-Space_mono text-base lg:h-[30px] lg:w-[30px] h-[24px] w-[24px] flex items-center justify-center">
               #
             </div>
-            <p className=" font-Space_mono text-base ">Artist</p>
+            <p className=" font-Space_mono lg:text-base text-[12px] ">Artist</p>
           </div>
-          <div className="w-[16.5%]  flex items-center">
+          <div className="w-[16.5%]  lg:flex items-center hidden">
             <p className=" font-Space_mono text-base ">Change</p>
           </div>
-          <div className="w-[16.5%]  flex items-center">
+          <div className="w-[16.5%]  lg:flex hidden items-center">
             <p className=" font-Space_mono text-base ">NFTs Sold</p>
           </div>
-          <div className="w-[16.5%] flex items-center">
-            <p className=" font-Space_mono text-base ">Volume </p>
+          <div className="lg:w-[16.5%] w-[100px] flex items-center">
+            <p className=" font-Space_mono lg:text-base text-[12px] ">
+              Volume{" "}
+            </p>
           </div>
         </div>
         {artists.map((artist) => {
           return (
             <div
               key={artist.id}
-              className="h-[84px] w-full bg-[#3B3B3B] rounded-[20px] px-[20px] mt-[20px] flex justify-between"
+              className="lg:h-[84px] h-[50px] w-full bg-[#3B3B3B] rounded-[20px] lg:px-[20px] px-[12px] mt-[20px] flex justify-between"
             >
-              <div className="w-[50%] flex items-center gap-[20px]">
-                <div className="w-[30px] h-[30px] bg-[#2B2B2B] flex items-center justify-center rounded-[20px] font-Space_mono text-base text-[#858584]">
+              <div className="lg:w-[50%] w-[215px]  flex items-center lg:gap-[20px] gap-[10px]">
+                <div className="lg:w-[30px] lg:h-[30px] w-[24px] h-[24px] bg-[#2B2B2B] flex items-center justify-center rounded-[20px] font-Space_mono lg:text-base text-[12px] text-[#858584]">
                   {artist.id}
                 </div>
-                <img src={artist.avatar} className="h-[60px] w-[60px]" />
-                <p className=" font-Work_sance text-[22px]">{artist.name}</p>
+                <img
+                  src={artist.avatar}
+                  className="lg:h-[60px] lg:w-[60px] h-[24px] w-[24px]"
+                />
+                <p className=" font-Work_sance lg:text-[22px] text-[12px]">
+                  {artist.name}
+                </p>
               </div>
-              <div className="w-[16.5%]  flex items-center">
+              <div className="w-[16.5%]  lg:flex hidden items-center">
                 <p className=" font-Space_mono text-[#00AC4F] text-base">
                   +1.41%
                 </p>
               </div>
-              <div className="w-[16.5%]  flex items-center">
+              <div className="w-[16.5%]  lg:flex hidden items-center">
                 <p className=" font-Space_mono text-base ">602</p>
               </div>
-              <div className="w-[16.5%] flex items-center">
-                <p className=" font-Space_mono text-base ">12.4 ETH</p>
+              <div className="lg:w-[16.5%] w-[100px] flex items-center">
+                <p className=" font-Space_mono lg:text-base text-[12px] ">
+                  12.4 ETH
+                </p>
               </div>
             </div>
           );

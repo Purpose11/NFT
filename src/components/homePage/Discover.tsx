@@ -31,19 +31,19 @@ const Discover = () => {
     },
   ];
   return (
-    <div className="w-full h-[780px] py-[80px] flex flex-col gap-[60px]">
-      <div className="w-[1050px] h-[91px] mx-auto flex items-end gap-[100px]">
-        <div className="w-[763px] h-[91px]">
-          <h3 className=" font-Work_sance font-[600] text-[38px]">
+    <div className="w-full lg:h-[780px] h-[1557px] lg:py-[80px] py-[40px] flex flex-col lg:gap-[60px] gap-[40px] relative lg:static">
+      <div className="lg:w-[1050px] w-[315px] lg:h-[91px] h-[71px] mx-auto flex items-end gap-[100px]">
+        <div className="lg:w-[763px] w-full  lg:h-[91px] h-[71px]">
+          <h3 className=" font-Work_sance font-[600] lg:text-[38px] text-[28px]">
             Discover More NFTs
           </h3>
-          <p className=" font-Work_sance text-[22px]">
+          <p className=" font-Work_sance lg:text-[22px] text-base">
             Explore new trending NFTs
           </p>
         </div>
 
         <Link
-          className="w-[187px] h-[60px] border-2 border-main rounded-[20px] flex items-center justify-center gap-[12px] cursor-pointer"
+          className="lg:w-[187px] w-[315px] h-[60px] border-2 border-main rounded-[20px] flex items-center justify-center gap-[12px] cursor-pointer absolute lg:static lg:bottom-0 bottom-[40px]"
           to="/marketplace"
         >
           <AiOutlineEye className=" shrink-0 text-main h-[20px] w-[20px]" />
@@ -51,39 +51,46 @@ const Discover = () => {
         </Link>
       </div>
 
-      <div className="w-[1050px] h-[496px] grid grid-cols-3 gap-[30px] mx-auto">
+      <div className="lg:w-[1050px] w-[315px] lg:h-[496px] h-[1246px] lg:grid lg:grid-cols-3 flex flex-col lg:gap-[30px] gap-[20px] mx-auto">
         {NFTs.map((NFT) => {
           return (
-            <div key={NFT.id} className=" w-[330px] h-[469px] rounded-[20px]">
+            <div
+              key={NFT.id}
+              className=" lg:w-[330px] w-[315px] lg:h-[469px] h-[402px] rounded-[20px]"
+            >
               <img
                 src={NFT.image}
-                className="w-full h-[296px] rounded-t-[20px]"
+                className="w-full lg:h-[296px] h-[238px] rounded-t-[20px]"
               />
 
-              <div className="bg-[#3B3B3B] w-full h-[173px] rounded-b-[20px] flex flex-col  gap-[25px] px-[30px] pt-[20px] pb-[25px]">
-                <div className="w-[270px] h-[60px] flex flex-col gap-[5px]">
-                  <h5 className=" font-Work_sance text-[22px] font-[600]">
+              <div className="bg-[#3B3B3B] w-full lg:h-[173px] h-[164px] rounded-b-[20px] flex flex-col  gap-[25px] lg:px-[30px] lg:pt-[20px] lg:pb-[25px] px-[20px] pt-[20px] pb-[25px]">
+                <div className="lg:w-[270px] w-[275px] h-[60px] flex flex-col gap-[5px]">
+                  <h5 className=" font-Work_sance lg:text-[22px] text-[18px] font-[600]">
                     {NFT.name}
                   </h5>
-                  <div className="h-[24px] w-[270px] flex gap-[12px]">
+                  <div className="h-[24px] lg:w-[270px] w-[275px] flex gap-[12px]">
                     <img src={NFT.artistAvatar} className="h-[24px] w-[24px]" />
-                    <p className=" font-Space_mono text-base font-normal">
+                    <p className=" font-Space_mono lg:text-base text-sm font-normal">
                       {NFT.artistname}
                     </p>
                   </div>
                 </div>
-                <div className="w-[270px] h-[43px] flex justify-between">
-                  <div className=" w-[135px] h-[43px]  flex flex-col gap-[8px]">
+                <div className="lg:w-[270px] w-[275px] lg:h-[43px] h-[34px] flex justify-between">
+                  <div className=" lg:w-[135px] w-[137.5px] lg:h-[43px] h-[34px]  flex flex-col lg:gap-[8px] gap-[5px]">
                     <p className=" font-Space_mono text-[#858584] text-xs">
                       Price
                     </p>
-                    <p className="  font-Space_mono text-base">1.63 ETH</p>
+                    <p className="  font-Space_mono lg:text-base text-xs">
+                      1.63 ETH
+                    </p>
                   </div>
-                  <div className=" w-[135px] h-[43px]  flex items-end flex-col gap-[8px]">
+                  <div className=" lg:w-[135px] w-[137.5px] lg:h-[43px] h-[34px]  flex items-end flex-col lg:gap-[8px] gap-[5px]">
                     <p className=" font-Space_mono text-[#858584] text-xs">
                       Highest Bid
                     </p>
-                    <p className="font-Space_mono text-base">0.33 wETH</p>
+                    <p className="font-Space_mono lg:text-base text-xs">
+                      0.33 wETH
+                    </p>
                   </div>
                 </div>
               </div>

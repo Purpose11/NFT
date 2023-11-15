@@ -24,29 +24,32 @@ const HowItWorks = () => {
     },
   ];
   return (
-    <div className="w-full h-[738px] py-[80px]">
-      <div className="w-[1050px] h-[91px] mx-auto">
-        <h3 className=" capitalize font-Work_sance text-[38px] font-[600]">
+    <div className="w-full lg:h-[738px] h-fit lg:py-[80px] py-[40px]">
+      <div className="lg:w-[1050px] w-[315px] lg:h-[91px] h-[71px] mx-auto">
+        <h3 className=" capitalize font-Work_sance lg:text-[38px] text-[28px] font-[600]">
           How it works
         </h3>
-        <p className=" capitalize font-Work_sance text-[22px] ">
+        <p className=" capitalize font-Work_sance lg:text-[22px] text-base ">
           Find out how to get started
         </p>
       </div>
 
-      <div className="w-[1050px] h-[439px] grid grid-cols-3 gap-[30px] mx-auto mt-[48px]">
+      <div className="lg:w-[1050px] w-[315px] lg:h-[439px] h-fit lg:grid lg:grid-cols-3 flex flex-col gap-[20px] lg:gap-[30px] mx-auto lg:mt-[48px] mt-[40px]">
         {Info.map((inf) => {
           return (
             <div
               key={inf.id}
-              className=" w-[330px] h-[439px] rounded-[20px] bg-[#3B3B3B] px-[30px] flex flex-col gap-[20px]"
+              className="lg:w-[330px] w-[315px] lg:h-[439px] h-[157px] rounded-[20px] bg-[#3B3B3B] lg:px-[30px] flex lg:flex-col lg:gap-[20px] justify-between lg:justify-normal p-[20px] lg:p-0"
             >
-              <img src={inf.image} className="w-[250px] h-[250px]" />
-              <div className="w-[270px] h-[126px]">
-                <h5 className=" font-Work_sance text-[22px] font-[600] text-center">
+              <img
+                src={inf.image}
+                className="lg:w-[250px] w-[100px] lg:h-[250px] h-[100px]"
+              />
+              <div className="lg:w-[270px] w-[155px] lg:h-[126px] h-[117px]">
+                <h5 className=" font-Work_sance lg:text-[22px] text-base font-[600] lg:text-center">
                   {inf.heading}
                 </h5>
-                <p className=" font-Work_sance text-base text-center mt-[10px]">
+                <p className=" font-Work_sance lg:text-base text-[12px] lg:text-center lg:mt-[10px] mt-[8px]">
                   {inf.main}
                 </p>
               </div>

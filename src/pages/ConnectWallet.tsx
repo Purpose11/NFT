@@ -21,7 +21,7 @@ const ConnectWallet = () => {
     },
   ];
   return (
-    <div className="w-full h-[642px]  flex justify-between">
+    <div className="w-full h-[642px]  flex  gap-[60px]">
       <img src={space} className="w-[610px] h-[642px]" />
       <div className="w-[610px] h-[642px]  py-[100px]">
         <div className="w-[460px] h-[146px] ">
