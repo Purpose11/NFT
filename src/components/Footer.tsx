@@ -37,7 +37,9 @@ const Footer = () => {
         </div>
         {/* explore links*/}
         <div className="lg:w-[240px] w-[315px] lg:h-[166px] h-[161px]">
-          <h5 className=" font-Space_mono font-[700] text-[22px]">Explore</h5>
+          <h5 className=" font-Space_mono font-[700] lg:text-[22px] text-[18px]">
+            Explore
+          </h5>
           <p className=" font-Work_sance text-base text-[#CCCCCC] lg:mt-[25px] mt-[20px]">
             Marketplace
           </p>
@@ -50,7 +52,7 @@ const Footer = () => {
         </div>
         {/* subscribe*/}
         <div className="lg:w-[420px] w-[315px] lg:h-[184px] h-[227px] flex flex-col lg:gap-[25px] gap-[15px] ">
-          <h5 className=" font-Space_mono text-[22px]  font-[700] capitalize border w-full ">
+          <h5 className=" font-Space_mono lg:text-[22px] text-[18px]  font-[700] capitalize border w-full ">
             Join our weekly digest
           </h5>
           <div className="lg:w-[420px] w-[315px] lg:h-[124px] h-[172px]  text-[#CCCCCC]">
