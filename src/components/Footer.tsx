@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-[1050px] w-[315px] h-[33px] border-[#858584]  border-t mx-auto mt-[30px] pt-[20px]">
+      <div className="lg:w-[1050px] w-[315px] h-[33px] border-[#858584]  border mx-auto lg:mt-[30px] mt-[30px] pt-[20px]">
         <p className="text-[#CCCCCC] text-xs font-Work_sance">
           Ⓒ NFT Market. Developed by Adebayo Fatai.
         </p>
