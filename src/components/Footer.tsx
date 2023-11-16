@@ -7,7 +7,7 @@ import TwitterLogo from "../assets/images/TwitterLogo.png";
 
 const Footer = () => {
   return (
-    <div className=" w-full lg:h-[334px] h-[776px] bg-[#3B3B3B] py-[40px]">
+    <div className=" w-full lg:h-[334px] h-fit bg-[#3B3B3B] py-[40px]">
       <div className="lg:w-[1050px] w-[315px] lg:h-[191px] h-[633px] mx-auto flex flex-col lg:flex-row lg:justify-between gap-[30px] lg:gap-0">
         {/* logo and info*/}
         <div className=" lg:w-[327.41px] w-[315px] lg:h-[191px] h-[185px]">
