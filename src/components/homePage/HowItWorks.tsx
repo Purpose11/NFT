@@ -39,17 +39,17 @@ const HowItWorks = () => {
           return (
             <div
               key={inf.id}
-              className="lg:w-[330px] w-[315px] lg:h-[439px] h-[157px] rounded-[20px] bg-[#3B3B3B] lg:px-[30px] flex lg:flex-col lg:gap-[20px] justify-between lg:justify-normal p-[20px] lg:p-0 border"
+              className="lg:w-[330px] w-[315px] lg:h-[439px] h-[157px] rounded-[20px] bg-[#3B3B3B] lg:px-[30px] flex lg:flex-col lg:gap-[20px] justify-between lg:justify-normal p-[20px] lg:p-0"
             >
               <img
                 src={inf.image}
                 className="lg:w-[250px] w-[100px] lg:h-[250px] h-[100px]"
               />
-              <div className="lg:w-[270px] w-[155px] lg:h-[126px] h-[117px] border">
+              <div className="lg:w-[270px] w-[155px] lg:h-[126px] h-[117px]">
                 <h5 className=" font-Work_sance lg:text-[22px] text-[16px] leading-[16.8px] lg:leading-0 font-[600] lg:text-center">
                   {inf.heading}
                 </h5>
-                <p className=" font-Work_sance lg:text-base text-[12px] lg:text-center lg:mt-[10px] mt-[5px] border">
+                <p className=" font-Work_sance lg:text-base text-[12px] lg:text-center lg:mt-[10px] mt-[5px]">
                   {inf.main}
                 </p>
               </div>
