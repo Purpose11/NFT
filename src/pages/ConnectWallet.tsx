@@ -25,7 +25,7 @@ const ConnectWallet = () => {
       <img src={space} className="lg:w-[610px] w-full lg:h-[642px] h-[232px]" />
       <div className="lg:w-[610px] w-[315px] lg:h-[642px] h-[430px] lg:py-[100px] py-[30px]  mx-auto lg:mx-0">
         <div className="lg:w-[460px] w-[315px] lg:h-[146px] h-[110px]">
-          <h2 className=" font-Work_sance lg:text-[51px] text-[38px] font-[600] capitalize">
+          <h2 className=" font-Work_sance lg:text-[51px] text-[32px] font-[600] capitalize">
             Connect wallet
           </h2>
           <p className=" font-Work_sance lg:text-[22px] text-[16px]">

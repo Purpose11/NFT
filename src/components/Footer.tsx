@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
         {/* subscribe*/}
         <div className="lg:w-[420px] w-[315px] lg:h-[184px] h-[227px] flex flex-col lg:gap-[25px] gap-[15px] ">
-          <h5 className=" font-Space_mono lg:text-[22px] text-[18px]  font-[700] capitalize border w-full ">
+          <h5 className=" font-Space_mono lg:text-[22px] text-[18px]  font-[700] capitalize  w-full ">
             Join our weekly digest
           </h5>
           <div className="lg:w-[420px] w-[315px] lg:h-[124px] h-[172px]  text-[#CCCCCC]">
@@ -61,7 +61,7 @@ const Footer = () => {
                 Get exclusive promotions & updates straight to your inbox.
               </p>
             </div>
-            <div className="lg:w-[420px] w-[315px] lg:h-[60px] h-fit lg:rounded-[20px]  flex flex-col lg:flex-row lg:bg-white lg:gap-[12px] gap-[16px] mt-[20px] border">
+            <div className="lg:w-[420px] w-[315px] lg:h-[60px] h-fit lg:rounded-[20px]  flex flex-col lg:flex-row lg:bg-white lg:gap-[12px] gap-[16px] mt-[20px]">
               <input
                 type="text"
                 placeholder="Enter your email here"
