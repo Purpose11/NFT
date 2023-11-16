@@ -68,7 +68,7 @@ const Market = () => {
     {
       id: 7,
       image: girl,
-      name: "Cherry Blossom Girl 035",
+      name: "Blossom Girl 035",
       artistAvatar: moonDancer,
       artistName: "MoonDancer",
     },

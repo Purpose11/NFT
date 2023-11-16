@@ -8,9 +8,9 @@ import TwitterLogo from "../assets/images/TwitterLogo.png";
 const Footer = () => {
   return (
     <div className=" w-full lg:h-[334px] h-fit bg-[#3B3B3B] py-[40px] flex flex-col gap-[30px]">
-      <div className="lg:w-[1050px] w-[315px] lg:h-[191px] h-[633px] mx-auto flex flex-col lg:flex-row lg:justify-between gap-[30px] lg:gap-0 border border-red-500">
+      <div className="lg:w-[1050px] w-[315px] lg:h-[191px] h-[633px] mx-auto flex flex-col lg:flex-row lg:justify-between gap-[30px] lg:gap-0">
         {/* logo and info*/}
-        <div className=" lg:w-[327.41px] w-[315px] lg:h-[191px] h-[185px] border">
+        <div className=" lg:w-[327.41px] w-[315px] lg:h-[191px] h-[185px]">
           <Link
             className="w-[243.41px] h-[32px] flex items-center gap-[10px] "
             to="/"
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         {/* explore links*/}
-        <div className="lg:w-[240px] w-[315px] lg:h-[166px] h-[161px] border">
+        <div className="lg:w-[240px] w-[315px] lg:h-[166px] h-[161px]">
           <h5 className=" font-Space_mono font-[700] text-[22px]">Explore</h5>
           <p className=" font-Work_sance text-base text-[#CCCCCC] lg:mt-[25px] mt-[20px]">
             Marketplace
@@ -49,7 +49,7 @@ const Footer = () => {
           </p>
         </div>
         {/* subscribe*/}
-        <div className="lg:w-[420px] w-[315px] lg:h-[184px] h-[227px] flex flex-col lg:gap-[25px] gap-[20px] border">
+        <div className="lg:w-[420px] w-[315px] lg:h-[184px] h-[227px] flex flex-col lg:gap-[25px] gap-[20px] ">
           <h5 className=" font-Space_mono text-[22px] font-[700] capitalize ">
             Join our weekly digest
           </h5>
@@ -59,7 +59,7 @@ const Footer = () => {
                 Get exclusive promotions & updates straight to your inbox.
               </p>
             </div>
-            <div className="lg:w-[420px] w-[315px] lg:h-[60px] h-[108px] lg:rounded-[20px]  flex flex-col lg:flex-row lg:bg-white lg:gap-[12px] gap-[16px] mt-[20px]">
+            <div className="lg:w-[420px] w-[315px] lg:h-[60px] h-fit lg:rounded-[20px]  flex flex-col lg:flex-row lg:bg-white lg:gap-[12px] gap-[16px] mt-[20px]">
               <input
                 type="text"
                 placeholder="Enter your email here"
