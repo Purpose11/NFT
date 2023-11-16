@@ -59,7 +59,7 @@ const Footer = () => {
                 Get exclusive promotions & updates straight to your inbox.
               </p>
             </div>
-            <div className="lg:w-[420px] w-[315px] lg:h-[60px] h-fit lg:rounded-[20px]  flex flex-col lg:flex-row lg:bg-white lg:gap-[12px] gap-[16px] mt-[20px]">
+            <div className="lg:w-[420px] w-[315px] lg:h-[60px] h-fit lg:rounded-[20px]  flex flex-col lg:flex-row lg:bg-white lg:gap-[12px] gap-[16px] mt-[20px] border">
               <input
                 type="text"
                 placeholder="Enter your email here"
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-[1050px] w-[315px] h-[33px] border-[#858584]  border mx-auto  pt-[20px]">
+      <div className="lg:w-[1050px] w-[315px] h-[33px] border-[#858584]  border-t mx-auto pt-[20px]">
         <p className="text-[#CCCCCC] text-xs font-Work_sance">
           Ⓒ NFT Market. Developed by Adebayo Fatai.
         </p>
