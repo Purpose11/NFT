@@ -21,27 +21,30 @@ const ConnectWallet = () => {
     },
   ];
   return (
-    <div className="w-full h-[642px]  flex  gap-[60px]">
-      <img src={space} className="w-[610px] h-[642px]" />
-      <div className="w-[610px] h-[642px]  py-[100px]">
-        <div className="w-[460px] h-[146px] ">
-          <h2 className=" font-Work_sance text-[51px] font-[600] capitalize">
+    <div className="w-full lg:h-[642px] h-[662px]  flex flex-col lg:flex-row lg:gap-[60px]">
+      <img src={space} className="lg:w-[610px] w-full lg:h-[642px] h-[232px]" />
+      <div className="lg:w-[610px] w-[315px] lg:h-[642px] h-[430px] lg:py-[100px] py-[30px]  mx-auto lg:mx-0">
+        <div className="lg:w-[460px] w-[315px] lg:h-[146px] h-[110px]">
+          <h2 className=" font-Work_sance lg:text-[51px] text-[38px] font-[600] capitalize">
             Connect wallet
           </h2>
-          <p className=" font-Work_sance text-[22px]">
+          <p className=" font-Work_sance lg:text-[22px] text-[16px]">
             Choose a wallet you want to connect. There are several wallet
             providers.
           </p>
         </div>
-        <div className="w-[320px] h-[256px]  mt-[40px] flex flex-col gap-[20px]">
+        <div className="lg:w-[320px] w-full lg:h-[256px] h-[220px]  mt-[40px] flex flex-col gap-[20px] ">
           {walltets.map((wallet) => {
             return (
               <div
-                className="w-full h-[72px] rounded-[20px] bg-[#3B3B3B] border border-main pr-[20px] pl-[40px] flex items-center gap-[20px] cursor-pointer"
+                className="w-full lg:h-[72px] h-[60px] rounded-[20px] bg-[#3B3B3B] border border-main pr-[20px] pl-[40px] flex items-center gap-[20px] cursor-pointer"
                 key={wallet.id}
               >
-                <img src={wallet.icon} className="w-[40px] h-[40px]" />
-                <h5 className=" font-Work_sance text-[22px] font-[600]">
+                <img
+                  src={wallet.icon}
+                  className="lg:w-[40px] lh:h-[40px] w-[32px] h-[32px]"
+                />
+                <h5 className=" font-Work_sance lg:text-[22px] text-[18px] font-[600]">
                   {wallet.name}
                 </h5>
               </div>
