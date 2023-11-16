@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
         {/* subscribe*/}
         <div className="lg:w-[420px] w-[315px] lg:h-[184px] h-[227px] flex flex-col lg:gap-[25px] gap-[15px] ">
-          <h5 className=" font-Space_mono text-[22px] font-[700] capitalize ">
+          <h5 className=" font-Space_mono text-[22px]  font-[700] capitalize border w-full ">
             Join our weekly digest
           </h5>
           <div className="lg:w-[420px] w-[315px] lg:h-[124px] h-[172px]  text-[#CCCCCC]">

@@ -11,7 +11,7 @@ const SignUp = () => {
       />
       <div className="lg:w-[610px] w-[315px] lg:h-[691px] h-[515px] mx-auto lg:mx-0 lg:py-[100px] py-[30px]">
         <div className="lg:w-[460px] w-[315px] lg:h-[146px] h-[110px]">
-          <h2 className=" font-Work_sance lg:text-[51px] text-[38px] font-[600] capitalize">
+          <h2 className=" font-Work_sance lg:text-[51px] text-[38px] leading-[45.6px] lg:leading-[56.1px] font-[600] capitalize">
             Create account
           </h2>
           <p className="lg:text-[22px] text-base font-Work_sance capitalize">
