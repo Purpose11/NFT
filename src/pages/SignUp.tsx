@@ -14,7 +14,7 @@ const SignUp = () => {
           <h2 className=" font-Work_sance lg:text-[51px] text-[32px] leading-[45.6px] lg:leading-[56.1px] font-[600] capitalize">
             Create account
           </h2>
-          <p className="lg:text-[22px] text-base font-Work_sance capitalize">
+          <p className="lg:text-[22px] text-base lg:leading-[35.2px] leading-[22.4px] font-Work_sance capitalize">
             Welcome! enter your details and start creating, collecting and
             selling NFTs.
           </p>
