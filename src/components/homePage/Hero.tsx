@@ -2,25 +2,52 @@ import { PiRocketLaunch } from "react-icons/pi";
 import Image_Placeholder from "../../assets/images/Image_Placeholder.png";
 import avatar from "../../assets/images/avatar.png";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
-  const info = [
+  const initialInfo = [
     {
       id: 1,
-      name: "240k+",
+      name: 0,
       text: "total sale",
+      target: 240,
     },
     {
       id: 2,
-      name: "100k+",
+      name: 0,
       text: "Auctions",
+      target: 100,
     },
     {
       id: 3,
-      name: "240k+",
+      name: 0,
       text: "Artists",
+      target: 240,
     },
   ];
+
+  const [info, setInfo] = useState(initialInfo);
+
+  useEffect(() => {
+    const updateCounts = () => {
+      setInfo((prevInfo) =>
+        prevInfo.map((item) => {
+          if (item.name < item.target) {
+            return {
+              ...item,
+              name: item.name + 1,
+            };
+          }
+          return item;
+        })
+      );
+    };
+
+    const interval = setInterval(updateCounts, 10);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="w-full lg:h-[704px] h-[786px] flex flex-col gap-[30px] lg:gap-0 lg:items-center lg:justify-center py-[40px] lg:py-0">
       <div className="lg:w-[1050px] w-[315px] lg:h-[544px] h-[706px]  flex flex-col lg:flex-row gap-[30px] mx-auto lg:mx-0 relative lg:static">
@@ -50,7 +77,7 @@ const Hero = () => {
                 key={inf.id}
               >
                 <h4 className=" font-Space_mono lg:text-[28px] text-[22px]">
-                  {inf.name}
+                  {inf.name}k
                 </h4>
                 <p className=" font-Work_sance lg:text-2xl text-base capitalize">
                   {inf.text}
